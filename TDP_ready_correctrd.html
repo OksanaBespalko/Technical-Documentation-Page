@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation Page</title>
+  </head>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+
+    ol {
+      margin-left: 323px;
+      list-style-type: square;
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 18px;
+    }
+      
+    #section {
+      position: absolute;
+      margin-top: 60px;
+      margin-left: 323px;
+      margin-bottom: 109px;
+      padding: 23px;
+    }    
+
+    img {
+      margin-left: 550px;;
+      width: 50%;
+    }
+  
+    header {
+      font-size: 31px;
+      margin: 7px;
+      text-align: center;
+      font-family: "Open Sans", Arial, sans-serif;
+    }
+
+    p {
+      margin-left: 323px;
+      width: 80%;
+      max-width: 100%;
+      font-family: "Open Sans", Arial, sans-serif;
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    h1 {margin-left: 323px;
+      text-align: center;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 320px;
+      height: 100%;
+      border: 1px solid black;
+      overflow: scroll;
+      overflow: hidden;
+    }
+
+    #navbar ul {
+      height: 88%;
+      padding: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      
+    }
+
+    #navbar li {
+      color:black;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      list-style: none;
+      position: relative;
+      width: 100%;
+    }
+
+    #navbar a {
+      display: block;
+      padding: 10px 30px;
+      color:black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: beige;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  
+}
+@media screen and (max-width: 700px){
+  #navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 50%;
+  }
+}
+
+    code {
+      font-size: 1.3rem;
+    }
+    
+    .highlight {
+      background-color: rgb(240, 206, 230);
+      margin: 10px 0px;
+      padding: 5px;
+      display: inline;
+    }
+    .footerclass{
+text-align: center;
+  color:black;
+ font-size: 1.3rem;
+}
+  </style>  
+  <body>
+    <aside>    
+      <nav>            
+        <nav id="navbar">
+          <header>
+            HTML Documentation
+          </header>
+          <ul>
+          <li>
+            <a href="#Introduction_to_HTML" class="nav-link">
+              Introduction to HTML
+            </a>
+          </li>              
+          <li>
+            <a href="#Elements" class="nav-link">
+              Elements
+            </a>
+          </li>             
+          <li>
+            <a href="#Semantic_HTML" class="nav-link">
+              Semantic HTML
+            </a>
+          </li>              
+          <li>
+            <a href="#HTML_Application" class="nav-link">
+              HTML Application
+            </a>
+          </li>              
+          <li>
+            <a href="#References" class="nav-link">
+              References
+            </a>
+          </li>
+        </ul>
+      </nav>        
+    </aside>
+    <main> 
+      <main id="main-doc">
+        <section class="main-section" id="Introduction_to_HTML">
+          <header>
+            Introduction to HTML
+          </header>
+          <article>
+            <p><b>HTML</b> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+            <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+            <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Elements">
+          <header>Elements</header>
+        <article>
+          <p> HTML documents imply a structure of nested HTML elements. These are indicated in the document by HTML tags, enclosed in angle brackets thus: &lt;p&gt;.
+            In the simple, general case, the extent of an element is indicated by a pair of tags: a "start tag" &lt;p&gt; and "end tag" &lt;/p&gt;. The text content of the element, if any, is placed between these tags.
+            Tags may also enclose further tag markup between the start and end, including a mixture of tags and text. This indicates further (nested) elements, as children of the parent element.
+            
+            The start tag may also include attributes within the tag. These indicate other information, such as identifiers for sections within the document, identifiers used to bind style information to the presentation of the document, and for some tags such as the &lt;img&gt; used to embed images, the reference to the image resource in the format like this:<code class="highlight"> &ltimg&gt src="example.com/example.jpg"&gt;</code>
+          </p>
+          <p> Some elements, such as the line break &ltbr&gt, or &lt/br&gt; do not permit any embedded content, either text or further tags. These require only a single empty tag (akin to a start tag) and do not use an end tag.</p>
+          <p>The general form of an HTML element is therefore: <code class="highlight"> &lt;tag attribute1="value1" attribute2="value2"&gt;''content''/tag&gt;</code>. </p>
+          <p>Some HTML elements are defined as empty elements and take the form <code class="highlight">&lt;tag attribute1="value1" attribute2="value2"&gt;</code>. Empty elements may enclose no content, for instance, the &lt;br&gt; tag or the inline <img> tag. The name of an HTML element is the name used in the tags. Note that the end tag's name is preceded by a slash character, /, and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case. </p>
+          <p> <b> Element examples</b></p>
+          <p><code> Header of the HTML document: <code class="highlight">&lthead>...&lt/head>.</code> The title is included in the head, for example: 
+          <ol>
+            <li><code class="highlight">&lthead&gt;</code></li>
+            <li><code class="highlight">&lttitle&gt;The Title&lt/title&gt;</code></li>
+            <li><code class="highlight">&lt/head&gt;</code></li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Semantic_HTML">
+        <header>Semantic HTML</header>
+        <article>
+          <p>Semantic HTML is a way of writing HTML that emphasizes the meaning of the encoded information over its presentation (look). HTML has included semantic markup from its inception,[82] but has also included presentational markup, such as &lt;font&gt;, &lt;i&gt; and &lt;center&gt; tags. There are also the semantically neutral span and div tags. Since the late 1990s, when Cascading Style Sheets were beginning to work in most browsers, web authors have been encouraged to avoid the use of presentational HTML markup with a view to the separation of presentation and content.</p>
+          <p>An important type of web agent that does crawl and read web pages automatically, without prior knowledge of what it might find, is the web crawler or search-engine spider. These software agents are dependent on the semantic clarity of web pages they find as they use various techniques and algorithms to read and index millions of web pages a day and provide web users with search facilities without which the World Wide Web's usefulness would be greatly reduced. </p>
+          <img src="https://www.researchgate.net/profile/Muhammad_Pasha8/publication/323869270/figure/fig3/AS:606182121164801@1521536488788/Structure-of-an-HTML5-Web-Page.png" alt="Semantic_HTML">
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Application">
+        <header>HTML Application</header>
+        <article>
+          <p>An HTML Application (HTA; file extension ".hta") is a Microsoft Windows application that uses HTML and Dynamic HTML in a browser to provide the application's graphical interface. A regular HTML file is confined to the security model of the web browser's security, communicating only to web servers and manipulating only web page objects and site cookies. </p>
+          <p>An HTA runs as a fully trusted application and therefore has more privileges, like creation/editing/removal of files and Windows Registry entries. Because they operate outside the browser's security model, HTAs cannot be executed via HTTP, but must be downloaded (just like an EXE file) and executed from local file system. </p>
+        </article>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <article>
+          <p>As this list demonstrates, the loose versions of the specification are maintained for legacy support. However, contrary to popular misconceptions, the move to XHTML does not imply a removal of this legacy support. Rather the X in XML stands for extensible and the W3C is modularizing the entire specification and opening it up to independent extensions. The primary achievement in the move from XHTML 1.0 to XHTML 1.1 is the modularization of the entire specification. The strict version of HTML is deployed in XHTML 1.1 through a set of modular extensions to the base XHTML 1.1 specification. Likewise, someone looking for the loose (transitional) or frameset specifications will find similar extended XHTML 1.1 support (much of it is contained in the legacy or frame modules). The modularization also allows for separate features to develop on their own timetable. So for example, XHTML 1.1 will allow quicker migration to emerging XML standards such as MathML (a presentational and semantic math language based on XML) and XForms—a new highly advanced web-form technology to replace the existing HTML forms. </p>
+          <p>In summary, the HTML  specification primarily reined in all the various HTML implementations into a single clearly written specification based on SGML. XHTML 1.0, ported this specification, as is, to the new XML defined specification. Next, XHTML 1.1 takes advantage of the extensible nature of XML and modularizes the whole specification. XHTML 2.0 was intended to be the first step in adding new features to the specification in a standards-body-based approach. </p>
+          <ol>
+            <li>World Wide Web Consortium. November 3, 1992. Archived from the original on January 31, 2010. Retrieved November 16, 2008. "Tags used in HTML". w3.</li>
+            <li>Berners-Lee, Tim (October 29, 1991). "First mention of HTML Tags on the www-talk mailing list". w3. World Wide Web Consortium. Archived from the original on May 24, 2007. Retrieved April 8, 2007.</li>
+            <li>Raggett, Dave. "A Review of the HTML+ Document Format". w3. Archived from the original on February 29, 2000. Retrieved May 22, 2020. "The hypertext markup language HTML was developed as a simple non-proprietary delivery format for global hypertext. HTML+ is a set of modular extensions to HTML and has been developed in response to a growing understanding of the needs of information providers. These extensions include text flow around floating figures, fill-out forms, tables and mathematical equations."</li>
+            <li>Raggett, Dave (2002). "Adding a touch of style". W3C. Retrieved October 2, 2009. This article notes that presentational HTML markup may be useful when targeting browsers "before Netscape 4.0 and Internet Explorer 4.0". See the list of web browsers to confirm that these were both released in 1997.</li>
+            <li>Spiesser, J., Kitchen, L.: Optimization of HTML automatically generated by WYSIWYG programs. In: 13th International Conference on World Wide Web, pp. 355—364. WWW '04. ACM, New York, NY (New York, NY, U.S., May 17–20, 2004)</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+    <footer class="footerclass">2020 © Copyright, Oksana Bespalko</footer>
+  </body>
+</html>
+
+<!-- Summary: 
+  - indention is important
+  - no empty css classes allowed
+  - no empty tags -> they are unneccessary :-)
+  - Really good job my girl! Congratulations 
+  :-*
+-->
